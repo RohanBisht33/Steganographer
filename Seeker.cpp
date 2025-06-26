@@ -43,8 +43,16 @@ string extractMessageFromImage(const string& imageFile) {
 int main() {
     string imageFile = "output.bmp"; // Image file containing hidden message
     string extractedMessage = extractMessageFromImage(imageFile);
+    cout << "\t\t\t\tWELCOME TO THE STEGANOGRAPHER SEEKER APPLICATION INTERFACE\n\n" << endl;
     if (!extractedMessage.empty()) {
         cout << "Extracted Message: " << extractedMessage << endl;
+                // Delete output.bmp after message extraction
+        if (remove(imageFile.c_str()) == 0) {
+            cout << "Temporary image file '" << imageFile << "' deleted successfully." << endl;
+        } else {
+            cerr << "Failed to delete the image file." << endl;
+        }
+
     } else {
         cout << "No hidden message found or error reading the file." << endl;
     }
