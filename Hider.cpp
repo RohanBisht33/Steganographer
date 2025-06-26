@@ -53,6 +53,8 @@ int main() {
     string outputImage = "output.bmp"; // Output BMP file with hidden message
     string message;
 
+    cout << "\t\t\t\tWELCOME TO THE STEGANOGRAPHER HIDER APPLICATION INTERFACE\n\n" << endl;
+    
     cout << "Enter the secret message to hide: ";
     getline(cin, message);
 
