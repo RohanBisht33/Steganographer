@@ -1,0 +1,5 @@
+This is a sample text file for steganography.
+You can hide secret messages in the whitespace.
+Each line can contain hidden information.
+The message is encoded using spaces and tabs.
+This provides a covert communication channel.
